@@ -12,7 +12,7 @@ plot2 <- function(directory){
     
     png(file = "./plot2.png", width = 480, height = 480, units = "px")
         
-    with(subdat, plot(Date, Global_active_power, ylab = "Global Active Power (kilowatts)", type="l"))
+    with(subdat, plot(Date, Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type="l"))
 
     dev.off()
     

@@ -14,7 +14,7 @@ plot4 <- function(directory){
     par(mfrow = c(2,2))
     
     with(subdat, {
-        plot(Date, Global_active_power, ylab = "Global Active Power (kilowatts)", type="l")
+        plot(Date, Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type="l")
         plot(Date, Voltage, ylab = "Voltage", xlab= "datetime", type="l")
         plot(Date, Sub_metering_1, ylab = "Energy sub metering", xlab= "", type="l")
         lines(Date, Sub_metering_2, type="l", col="red")
